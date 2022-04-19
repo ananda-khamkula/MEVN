@@ -1,4 +1,7 @@
 import axios from 'axios'
+const trunks = require('trunks-log')
+
+const log = new trunks('USERS')
 
 export const UsersService = {
   http: axios.create({

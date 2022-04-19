@@ -6,8 +6,8 @@
 
     <v-card-text class="text-body-1 mt-4">
       {{ body }}
+      ID: [{{ id }}]
     </v-card-text>
-
     <v-divider></v-divider>
 
     <v-card-actions>
@@ -70,7 +70,7 @@ export default {
     },
 
     async confirmDelete() {
-      await this.$store.dispatch('users/Delete')
+      await this.$store.dispatch('users/Delete', this.id)
       console.log('Confirm Modal Post Delete')
       this.close()
     },

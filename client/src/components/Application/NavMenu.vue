@@ -45,6 +45,11 @@ export default {
         icon: 'mdi-home',
       },
       {
+        text: 'Login',
+        route: '/login',
+        icon: 'mdi-login',
+      },
+      {
         text: 'Users',
         route: '/users',
         icon: 'mdi-account-group',
